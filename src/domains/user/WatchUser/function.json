@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "",
+      "databaseName": "",
+      "collectionName": "",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "type": "servicebus",
+      "direction": "out",
+      "name": "event",
+      "topicName": "event"
+    }
+  ],
+  "scriptFile": "../dist/WatchUser/index.js"
+}
