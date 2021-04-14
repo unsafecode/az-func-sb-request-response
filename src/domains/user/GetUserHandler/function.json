@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "name": "query",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "query",
+      "subscriptionName": "GetUser",
+      "connection": ""
+    }
+  ],
+  "scriptFile": "../dist/GetUserHandler/index.js"
+}
